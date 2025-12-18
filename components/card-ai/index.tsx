@@ -11,7 +11,7 @@ import {
 
 const CardAi = () => {
   return (
-    <Card className="rounded-sm shadow-none">
+    <Card className="rounded-lg shadow-none">
       <CardHeader className="flex flex-row items-center gap-2">
         <div className="p-2 rounded-full bg-gradient-primary">
           <MessageIcon />

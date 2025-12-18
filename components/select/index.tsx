@@ -18,7 +18,7 @@ export const SelectUi = ({
       <SelectTrigger>
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="w-1/2 md:w-auto">
         {data.map((item) => {
           return <SelectItem value={item.value} key={item.value}>{item.label}</SelectItem>;
         })}

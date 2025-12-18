@@ -9,16 +9,16 @@ import { Search } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 border-b border-gray-90  w-full flex flex-row items-center justify-between py-4 px-6">
-      <div className="flex flex-col">
-        <h1 className="text-gradient uppercase flex flex-col text-center text-base font-bold  uppercasedark:text-white lg:text-left">
+    <header className="sticky top-0 border-b border-gray-90 bg-white  w-full flex flex-col lg:flex-row items-center justify-between py-4 px-6">
+      <div className="flex flex-col max-lg:mb-4 w-full">
+        <h1 className="text-gradient uppercase flex flex-col text-start  text-base font-bold  uppercasedark:text-white">
           What's Hot on Social Vietnam
         </h1>
         <h2 className="text-xs tracking-normal text-zinc-500">
           Chỉ số xu hướng mạng xã hội theo thời gian thực · Powered by Kompa.ai
         </h2>
       </div>
-      <div className="flex flex=row gap-2 items-center">
+      <div className="flex flex-row max-lg:flex-wrap w-full justify-start gap-2 items-center">
         <SelectUi
           defaultValue={GENERAL_TYPES[0].value}
           data={GENERAL_TYPES}

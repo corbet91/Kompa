@@ -29,11 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="box-border m-0 border-0 block">
       <body
         className={`${lexend.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="bg-background flex min-h-svh flex-col">
+        <div className="bg-background flex min-h-svh flex-col w-full">
           <Header />
           {children}
         </div>
