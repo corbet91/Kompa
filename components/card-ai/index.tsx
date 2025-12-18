@@ -1,3 +1,4 @@
+
 import MessageIcon from "@/public/icons/message";
 import {
   Card,
@@ -10,6 +11,7 @@ import {
 } from "../ui/card";
 
 const CardAi = () => {
+
   return (
     <Card className="rounded-lg shadow-none">
       <CardHeader className="flex flex-row items-center gap-2">
@@ -19,7 +21,9 @@ const CardAi = () => {
 
         <CardTitle>Tóm tắt AI – </CardTitle>
       </CardHeader>
-      <CardContent></CardContent>
+      <CardContent>
+
+      </CardContent>
     </Card>
   );
 };

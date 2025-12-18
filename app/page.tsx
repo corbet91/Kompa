@@ -1,4 +1,5 @@
 import CardAi from "@/components/card-ai";
+import CardChart from "@/components/card-chart";
 import CardTrending from "@/components/card-trending";
 import { TYPES_TRENDING } from "@/constant";
 
@@ -31,7 +32,10 @@ export default function Home() {
             );
           })}
         </div>
+        
+            <CardChart/>
         </div>
+
       </div>
     </main>
   );
