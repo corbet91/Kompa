@@ -11,10 +11,10 @@ const Header = () => {
   return (
     <header className="sticky top-0 border-b border-gray-90 bg-white  w-full flex flex-col lg:flex-row items-center justify-between py-4 px-6">
       <div className="flex flex-col max-lg:mb-4 w-full">
-        <h1 className="text-gradient uppercase flex flex-col text-start  text-base font-bold  uppercasedark:text-white">
+        <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
           What's Hot on Social Vietnam
         </h1>
-        <h2 className="text-xs tracking-normal text-zinc-500">
+        <h2 className="text-muted-foreground text-lg">
           Chỉ số xu hướng mạng xã hội theo thời gian thực · Powered by Kompa.ai
         </h2>
       </div>
