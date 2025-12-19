@@ -65,4 +65,8 @@ const TYPES_TRENDING = [
   },
 ];
 
+const COLORS = [
+  
+]
+
 export { DEFAULT_FILTER, GENERAL_TYPES, TIME_TYPES, CHANNEL_NAMES , TYPES_TRENDING };

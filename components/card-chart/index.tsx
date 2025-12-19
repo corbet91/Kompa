@@ -2,6 +2,7 @@
 import CardHotTrend from "../card-hot-trend";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import EChartsReact from "echarts-for-react";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -9,8 +10,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import React from "react";
 
 const CardChart = () => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+
   const option = {
     title: {
       text: "Stacked Line",
@@ -89,16 +95,42 @@ const CardChart = () => {
       </CardHeader>
       <CardContent>
         <EChartsReact option={option} />
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <Carousel className="w-full">
+        <div className="mt-6 grid grid-cols-1 gap-4">
+          <Carousel
+            className="w-full"
+            plugins={[plugin.current]}
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+          >
             <CarouselContent>
-              <CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CardHotTrend />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CardHotTrend />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CardHotTrend />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CardHotTrend />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CardHotTrend />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CardHotTrend />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <CardHotTrend />
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            {/* <CarouselPrevious />
+            <CarouselNext /> */}
           </Carousel>
+        </div>
+        <div className="mt-6 pt-6 border-t border-border">
+
         </div>
       </CardContent>
     </Card>

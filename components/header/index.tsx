@@ -9,7 +9,7 @@ import { Search } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 border-b border-gray-90 bg-white  w-full flex flex-col lg:flex-row items-center justify-between py-4 px-6">
+    <header className="sticky z-50 top-0 border-b border-gray-90 bg-white  w-full flex flex-col lg:flex-row items-center justify-between py-4 px-6">
       <div className="flex flex-col max-lg:mb-4 w-full">
         <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
           What's Hot on Social Vietnam
