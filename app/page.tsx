@@ -1,10 +1,15 @@
 "use client";
 
 import CardAi from "@/components/card-ai";
-import CardChart from "@/components/card-chart";
 import CardTrending from "@/components/card-trending";
 import CardViral from "@/components/card-viral";
 import { TYPES_TRENDING } from "@/constant";
+import dynamic from "next/dynamic";
+
+const CardChart = dynamic(() => import('@/components/card-chart'), { 
+  ssr: false 
+});
+
 
 export default function Home() {
   return (

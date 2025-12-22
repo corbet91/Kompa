@@ -18,24 +18,30 @@ const Header = () => {
           Chỉ số xu hướng mạng xã hội theo thời gian thực · Powered by Kompa.ai
         </h2>
       </div>
-      <div className="flex flex-row max-lg:flex-wrap w-full justify-start gap-2 items-center">
-        <SelectUi
-          defaultValue={GENERAL_TYPES[0].value}
-          data={GENERAL_TYPES}
-          placeholder="Chọn loại"
-        />
-        <SelectUi
-          defaultValue={TIME_TYPES[0].value}
-          data={TIME_TYPES}
-          placeholder="Chọn loại"
-        />
-        <SelectUi
-          defaultValue={CHANNEL_NAMES[0].value}
-          data={CHANNEL_NAMES}
-          placeholder="Chọn loại"
-        />
-        <InputGroup>
-          <InputGroupInput placeholder="Tìm chủ đề" />
+      <div className="flex flex-row max-lg:flex-wrap w-full justify-start gap-3 items-center">
+        <div className="flex-1">
+          <SelectUi
+            defaultValue={GENERAL_TYPES[0].value}
+            data={GENERAL_TYPES}
+            placeholder="Chọn loại"
+          />
+        </div>
+        <div className="flex-1">
+          <SelectUi
+            defaultValue={TIME_TYPES[0].value}
+            data={TIME_TYPES}
+            placeholder="Chọn loại"
+          />
+        </div>
+        <div className="flex-1">
+          <SelectUi
+            defaultValue={CHANNEL_NAMES[0].value}
+            data={CHANNEL_NAMES}
+            placeholder="Chọn loại"
+          />
+        </div>
+        <InputGroup className="flex-1 rounded-[14px] bg-secondary">
+          <InputGroupInput placeholder="Tìm chủ đề..." />
           <InputGroupAddon>
             <Search />
           </InputGroupAddon>

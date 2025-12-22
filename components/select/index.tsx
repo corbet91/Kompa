@@ -14,11 +14,11 @@ export const SelectUi = ({
   ...props
 }: TTypeSelectProps) => {
   return (
-    <Select {...props}>
+    <Select {...props} >
       <SelectTrigger>
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
-      <SelectContent className="w-1/2 md:w-auto">
+      <SelectContent>
         {data.map((item) => {
           return <SelectItem value={item.value} key={item.value}>{item.label}</SelectItem>;
         })}
