@@ -1,3 +1,4 @@
+import CardChartSingleLine from "../card-chart-single-line";
 import StatusProgress from "../status-progress";
 import { Card } from "../ui/card";
 
@@ -7,7 +8,7 @@ interface ICardViral {
 
 const CardViral = ({number}: ICardViral) => {
   return (
-    <Card className="p-5 rounded-xl border border-border hover:border-primary/50 hover:shadow-card transition-all cursor-pointer bg-card">
+    <Card className="p-5 rounded-xl border border-border hover:border-ring hover:shadow-card transition-all cursor-pointer bg-card">
       <div className="flex flex-col lg:flex-row lg:items-center gap-4">
         <div className="flex-1 space-y-2">
           <div className="flex items-start gap-3">
@@ -29,6 +30,7 @@ const CardViral = ({number}: ICardViral) => {
             </div>
           </div>
           <StatusProgress percentWidthPositive="50%" percentWidthNeutral="30%" percentWidthNegative="20%" />
+             <CardChartSingleLine />
         </div>
       </div>
     </Card>

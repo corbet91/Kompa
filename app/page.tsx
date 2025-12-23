@@ -1,8 +1,10 @@
 "use client";
 
 import CardAi from "@/components/card-ai";
+import CardChartSingleLine from "@/components/card-chart-single-line";
 import CardTrending from "@/components/card-trending";
 import CardViral from "@/components/card-viral";
+import HotScore from "@/components/hot-score";
 import { TYPES_TRENDING } from "@/constant";
 import dynamic from "next/dynamic";
 
@@ -42,6 +44,7 @@ export default function Home() {
           </div>
 
           <CardChart />
+     
         </div>
       </div>
       <div className="rounded-lg border text-card-foreground shadow-sm p-6 shadow-card hover:shadow-card-hover transition-shadow bg-gradient-card border-borde bg-white">

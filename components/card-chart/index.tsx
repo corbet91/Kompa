@@ -5,6 +5,7 @@ import React from "react";
 import CardHotTrend from "../card-hot-trend";
 import { Card, CardContent, CardHeader } from "../ui/card";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import HotScore from "../hot-score";
 
 const CardChart = () => {
   const plugin = React.useRef(
@@ -77,19 +78,19 @@ const CardChart = () => {
       {
         name: "Video Ads",
         type: "line",
-               symbol: "circle",
+        symbol: "circle",
         data: [150, 232, 201, 154, 190, 330, 410],
       },
       {
         name: "Direct",
         type: "line",
-               symbol: "circle",
+        symbol: "circle",
         data: [320, 332, 301, 334, 390, 330, 320],
       },
       {
         name: "Search Engine",
         type: "line",
-               symbol: "circle",
+        symbol: "circle",
         data: [820, 932, 901, 934, 1290, 1330, 1320],
       },
     ],
@@ -157,7 +158,9 @@ const CardChart = () => {
             <CarouselNext /> */}
           </Carousel>
         </div>
-        <div className="mt-6 pt-6 border-t border-border"></div>
+        <div className="mt-6 pt-6 border-t border-border">
+          <HotScore />
+        </div>
       </CardContent>
     </Card>
   );
